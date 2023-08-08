@@ -1,0 +1,16 @@
+{
+  "name": "data-scraper-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pandas-js": "^0.2.4",
+    "xlsx": "^0.18.5"
+  }
+}

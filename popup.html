@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zomato Scraper</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('icon16.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 8px;
+        max-width: 600px;
+        text-align: center;
+        position: relative;
+      }
+
+      h2 {
+        color: #333;
+        margin-top: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .button {
+        background-color: #b84745;
+        border: none;
+        color: white;
+        padding: 2px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 4px;
+        width: 100%;
+        opacity: 70%;
+      }
+
+      .button:hover {
+        background-color: rgba(32, 5, 16, 0.6);
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="background.png" alt="Logo">
+      <h2>Data Scraper</h2>
+      <button id="scrapeButton" class="button">Scrape</button>
+      <div id="progressMessage" class="hidden">Scraping in progress...</div>
+      <button id="downloadButton" class="hidden button">Download Excel</button>
+    </div>
+    <script src="xlsx.full.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
